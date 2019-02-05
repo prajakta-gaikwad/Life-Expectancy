@@ -47,12 +47,29 @@ for surgery related deaths.
 |   **Risk1Y**  | 1 year survival period - (T) value if died (T = 1, F = 0)    |
 
 ### Initial Data Cleaning and Exploration:
+* Data did not have any Null values
+* Many columns had categorical variables with most of them being True and Flase values. These were converted to 1 and 0 int data types. 
+
+```
+df.replace({
+    'T':1,
+    'F':0,
+    'PRZ0':0,
+    'PRZ1':1,
+    'PRZ2':2,
+    'OC10':0,
+    'OC11':1,
+    'OC12':2,
+    'OC13':3,
+    'OC14':4,
+    'OC15':5
+},inplace=True)
+```
+* Out of 470 patients, 70 **did not survive** 1 year after the surgery which is **14.89%** of the total sample size.
+
 ![Alt text](initial_de.PNG?raw=true "Optional Title")
 
-* Data did not have any Null values
 
-* Many columns had categorical variables with most of them being True and Flase values. These were converted to 1 and 0 int data types. 
-* Out of 470 patients, 70 **did not survive** 1 year after the surgery which is **14.89%** of the total sample size.
 
 ![Alt text](initial_de4.PNG?raw=true "Optional Title")
 
