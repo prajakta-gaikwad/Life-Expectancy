@@ -1,6 +1,4 @@
 # Life-Expectancy
-Machine Learning Web Application and Tableau Dashboard
-
 This project is devided in two parts:
 * Developing a Machine Learning Web App to determine Post-Operative Life Expectancy of Lung Cancer Patients
 * Creating a Tableau dashboard to visualize trends in life expectancy (in general) in different countries over time
