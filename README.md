@@ -98,6 +98,7 @@ df.replace({
 * KNN
 * SVM
 * XGB Classifier
+
 ![Alt text](logistic_regression.PNG?raw=true "Optional Title")
 ![Alt text](tree_forest.PNG?raw=true "Optional Title")
 
