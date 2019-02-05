@@ -71,13 +71,15 @@ df.replace({
 
 ![Alt text](initial_de4.PNG?raw=true "Optional Title")
 
+* The most notable attributes for those who died are Dyspnoea, Diabetes Mellius, Pain, PAD, and Haemoptysis, this indicates that for those who died, these features were strongly presented.
+
 ![Alt text](initial_de2.PNG?raw=true "Optional Title")
 
-* The most notable attributes for those who died are Dyspnoea, Diabetes Mellius, Pain, PAD, and Haemoptysis, this indicates that for those who died, these features were strongly presented.
+* It is clear that Cough and Smoking are strongly correlated to those patients who are to recieve thoracic surgery.
 
 ![Alt text](initial_de3.PNG?raw=true "Optional Title")
 
-* It is clear that Cough and Smoking are strongly correlated to those patients who are to recieve thoracic surgery.
+
 
 ### Machine Learning
 ![Alt text](ml.jpeg?raw=true "Optional Title")
