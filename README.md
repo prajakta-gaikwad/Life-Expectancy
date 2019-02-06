@@ -185,6 +185,9 @@ df.replace({
 #### A choropleth was created in leaflet but was later moved to Tableau.
 ![Alt text](img6.png?raw=true "Optional Title")
 
-## <a href="https://secret-island-71959.herokuapp.com">Our Page!</a>
+#### Screenshots of the website
+![Alt text](homepage.png?raw=true "Optional Title")
+![Alt text](webform.png?raw=true "Optional Title")
+![Alt text](dashboard.png?raw=true "Optional Title")
 
 
