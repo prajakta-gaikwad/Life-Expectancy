@@ -1,6 +1,4 @@
 # Life-Expectancy
-Machine Learning Web Application and Tableau Dashboard
-
 This project is devided in two parts:
 * Developing a Machine Learning Web App to determine Post-Operative Life Expectancy of Lung Cancer Patients
 * Creating a Tableau dashboard to visualize trends in life expectancy (in general) in different countries over time
@@ -47,22 +45,41 @@ for surgery related deaths.
 |   **Risk1Y**  | 1 year survival period - (T) value if died (T = 1, F = 0)    |
 
 ### Initial Data Cleaning and Exploration:
+* Data did not have any Null values
+* Many columns had categorical variables with most of them being True and Flase values. These were converted to 1 and 0 int data types. 
+
+```
+df.replace({
+    'T':1,
+    'F':0,
+    'PRZ0':0,
+    'PRZ1':1,
+    'PRZ2':2,
+    'OC10':0,
+    'OC11':1,
+    'OC12':2,
+    'OC13':3,
+    'OC14':4,
+    'OC15':5
+},inplace=True)
+```
+* Out of 470 patients, 70 **did not survive** 1 year after the surgery which is **14.89%** of the total sample size.
+
 ![Alt text](initial_de.PNG?raw=true "Optional Title")
 
-* Data did not have any Null values
 
-* Many columns had categorical variables with most of them being True and Flase values. These were converted to 1 and 0 int data types. 
-* Out of 470 patients, 70 **did not survive** 1 year after the surgery which is **14.89%** of the total sample size.
 
 ![Alt text](initial_de4.PNG?raw=true "Optional Title")
 
+* The most notable attributes for those who died are Dyspnoea, Diabetes Mellius, Pain, PAD, and Haemoptysis, this indicates that for those who died, these features were strongly presented.
+
 ![Alt text](initial_de2.PNG?raw=true "Optional Title")
 
-* The most notable attributes for those who died are Dyspnoea, Diabetes Mellius, Pain, PAD, and Haemoptysis, this indicates that for those who died, these features were strongly presented.
+* It is clear that Cough and Smoking are strongly correlated to those patients who are to recieve thoracic surgery.
 
 ![Alt text](initial_de3.PNG?raw=true "Optional Title")
 
-* It is clear that Cough and Smoking are strongly correlated to those patients who are to recieve thoracic surgery.
+
 
 ### Machine Learning
 ![Alt text](ml.jpeg?raw=true "Optional Title")
@@ -81,12 +98,13 @@ for surgery related deaths.
 * KNN
 * SVM
 * XGB Classifier
+
 ![Alt text](logistic_regression.PNG?raw=true "Optional Title")
 ![Alt text](tree_forest.PNG?raw=true "Optional Title")
 
 #### Limitations faced and strategies used to improve model performance:
-* The data had a significant class imbalance as the patients that did not survive(class B) are just the 15% of the data-set and rest 85% of patients that are alive(class A).
-* Although all the models (from scikit-library) reached an accuracy of around 90%, it was simply by predicting class A every time.
+* The data had a significant class imbalance as the patients that did not survive(class B) are just 15% of the data-set unlike (class A) which is 85% of the data .
+* Although all the models (from scikit-learn library) reached an accuracy of around 90%, it was simply by predicting class A every time.
 * To deal with class imbalance, properly calibrated method may achieve a lower accuracy, but would have a substantially higher true positive rate(or Recall).
 * Techniques used - Using the class weights and Oversampling the minority class i.e. to duplicate the minority class entries.
 * Using class weights also did not improve models' performance.
@@ -100,6 +118,7 @@ for surgery related deaths.
 
 
 ### Web App:
+![Alt text](architecture.png?raw=true "Optional Title")
 #### Front-end:
 * Created a web form using HTML, CSS and Bootstrap
 #### Backend:
@@ -113,3 +132,8 @@ for surgery related deaths.
 
 # Part 2 - Tableau Dashboard
 ![Alt text](lifespan.jpg?raw=true "Optional Title")
+
+
+![Alt text](tableau1.gif?raw=true "Optional Title")
+
+
