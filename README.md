@@ -71,7 +71,7 @@ df.replace({
 
 ![Alt text](initial_de4.PNG?raw=true "Optional Title")
 
-* The most notable attributes for those who died are Dyspnoea, Diabetes Mellius, Pain, PAD, and Haemoptysis, this indicates that for those who died, these features were strongly presented.
+* The most notable attributes for those who died are Dyspnoea, Diabetes Mellitus, Pain, PAD, and Haemoptysis, this indicates that for those who died, these features were strongly presented.
 
 ![Alt text](initial_de2.PNG?raw=true "Optional Title")
 
