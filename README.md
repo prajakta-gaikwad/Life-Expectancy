@@ -1,7 +1,24 @@
 # Life-Expectancy
 This project is devided in two parts:
-* Developing a Machine Learning Web App to determine Post-Operative Life Expectancy of Lung Cancer Patients
+* Developing a Machine Learning Web Application to determine Post-Operative Life Expectancy of Lung Cancer Patients
 * Creating a Tableau dashboard to visualize trends in life expectancy (in general) in different countries over time
+
+#### Project website is hosted on [https://life-expectancy.herokuapp.com/](https://life-expectancy.herokuapp.com/)
+
+# Technologies Used
+* Python
+  * Pandas
+  * NumPy
+  * Matplotlib
+  * Seaborn
+ * Machine Learning Libraries
+   * Scikit-Learn
+   * XGBoost
+ * Python Flask RESTful API
+ * Tableau
+ * HTML/CSS/Bootstrap
+ * Javascript
+ * Heroku Platform
 
 # Part 1 - **LUNG**EVITY Machine Learning Web App
 ![Alt text](tho.jpg?raw=true "Optional Title")
@@ -71,7 +88,7 @@ df.replace({
 
 ![Alt text](initial_de4.PNG?raw=true "Optional Title")
 
-* The most notable attributes for those who died are Dyspnoea, Diabetes Mellius, Pain, PAD, and Haemoptysis, this indicates that for those who died, these features were strongly presented.
+* The most notable attributes for those who died are Dyspnoea, Diabetes Mellitus, Pain, PAD, and Haemoptysis, this indicates that for those who died, these features were strongly presented.
 
 ![Alt text](initial_de2.PNG?raw=true "Optional Title")
 
@@ -135,5 +152,39 @@ df.replace({
 
 
 ![Alt text](tableau1.gif?raw=true "Optional Title")
+
+
+## Data cleaning and merging
+
+#### We had a very large geojson file (23mb)
+
+![Alt text](img1.png?raw=true "Optional Title")
+
+#### Running this file really bogged down the system. I found mapshaper.com
+#### This site allows you to lower the resolution and merge borders of a file to shrink it.
+
+## <a href="http://www.icdzn.com/misc/mapshaper.gif" target="_blank">Map Shaper!</a>
+
+#### The new file is only 600kb
+![Alt text](img2.png?raw=true "Optional Title")
+
+#### The next step was to append the related data from a .csv file into the geojson.  
+#### The output was logged to see what matched up and what did not.  
+#### Instances like 'United States' vs 'United States of America' had to be cleaned in order for the data to match.
+
+![Alt text](img3.png?raw=true "Optional Title")
+
+#### LifeX was added in as a property of the feature.  for each matching feature we aded a list of years and life expectancies.
+
+![Alt text](img4.png?raw=true "Optional Title")
+
+#### A Flask was created but not used since we decided to move the charts to Tableau because of time contraints.  This included a BMI calculator.
+
+![Alt text](img5.png?raw=true "Optional Title")
+
+#### A choropleth was created in leaflet but was later moved to Tableau.
+![Alt text](img6.png?raw=true "Optional Title")
+
+## <a href="https://secret-island-71959.herokuapp.com">Our Page!</a>
 
 
