@@ -3,6 +3,23 @@ This project is devided in two parts:
 * Developing a Machine Learning Web App to determine Post-Operative Life Expectancy of Lung Cancer Patients
 * Creating a Tableau dashboard to visualize trends in life expectancy (in general) in different countries over time
 
+# Project website is hosted on [https://life-expectancy.herokuapp.com/](https://life-expectancy.herokuapp.com/)
+
+# Technologies Used
+* Python
+  * Pandas
+  * NumPy
+  * Matplotlib
+  * Seaborn
+ * Machine Learning Libraries
+   * Scikit-Learn
+   * XGBoost
+ * Python Flask RESTful API
+ * Tableau
+ * HTML/CSS/Bootstrap
+ * Javascript
+ * Heroku Platform
+
 # Part 1 - **LUNG**EVITY Machine Learning Web App
 ![Alt text](tho.jpg?raw=true "Optional Title")
 
