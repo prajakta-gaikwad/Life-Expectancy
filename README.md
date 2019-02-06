@@ -137,3 +137,35 @@ df.replace({
 ![Alt text](tableau1.gif?raw=true "Optional Title")
 
 
+## Data cleaning and merging
+
+#### We had a very large geojson file (23mb)
+
+![Alt text](img1.PNG?raw=true "Optional Title")
+
+#### Running this file really bogged down the system. I found mapshaper.com
+#### This site allows you to lower the resolution and merge borders of a file to shrink it.
+
+## http://www.icdzn.com/misc/mapshaper.gif
+
+#### The new file is only 600kb
+![Alt text](img2.PNG?raw=true "Optional Title")
+
+#### The next step was to append the related data from a .csv file into the geojson.  
+#### The output was logged to see what matched up and what did not.  
+#### Instances like 'United States' vs 'United States of America' had to be cleaned in order for the data to match.
+
+![Alt text](img3.PNG?raw=true "Optional Title")
+
+#### LifeX was added in as a property of the feature.  for each matching feature we aded a list of years and life expectancies.
+
+![Alt text](img4.PNG?raw=true "Optional Title")
+
+#### A Flask was created but not used since we decided to move the charts to Tableau because of time contraints.  This included a BMI calculator.
+
+![Alt text](img5.PNG?raw=true "Optional Title")
+
+#### A choropleth was created in leaflet but was later moved to Tableau.
+![Alt text](img6.PNG?raw=true "Optional Title")
+
+
