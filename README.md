@@ -146,7 +146,7 @@ df.replace({
 #### Running this file really bogged down the system. I found mapshaper.com
 #### This site allows you to lower the resolution and merge borders of a file to shrink it.
 
-## http://www.icdzn.com/misc/mapshaper.gif
+## <a href="http://www.icdzn.com/misc/mapshaper.gif" target="_blank">Map Shaper!</a>
 
 #### The new file is only 600kb
 ![Alt text](img2.png?raw=true "Optional Title")
@@ -168,4 +168,6 @@ df.replace({
 #### A choropleth was created in leaflet but was later moved to Tableau.
 ![Alt text](img6.png?raw=true "Optional Title")
 
-# https://secret-island-71959.herokuapp.com
+## <a href="https://secret-island-71959.herokuapp.com">Our Page!</a>
+
+
