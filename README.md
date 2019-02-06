@@ -103,8 +103,8 @@ df.replace({
 ![Alt text](tree_forest.PNG?raw=true "Optional Title")
 
 #### Limitations faced and strategies used to improve model performance:
-* The data had a significant class imbalance as the patients that did not survive(class B) are just the 15% of the data-set and rest 85% of patients that are alive(class A).
-* Although all the models (from scikit-library) reached an accuracy of around 90%, it was simply by predicting class A every time.
+* The data had a significant class imbalance as the patients that did not survive(class B) are just 15% of the data-set unlike (class A) which is 85% of the data .
+* Although all the models (from scikit-learn library) reached an accuracy of around 90%, it was simply by predicting class A every time.
 * To deal with class imbalance, properly calibrated method may achieve a lower accuracy, but would have a substantially higher true positive rate(or Recall).
 * Techniques used - Using the class weights and Oversampling the minority class i.e. to duplicate the minority class entries.
 * Using class weights also did not improve models' performance.
@@ -118,6 +118,7 @@ df.replace({
 
 
 ### Web App:
+![Alt text](architecture.png?raw=true "Optional Title")
 #### Front-end:
 * Created a web form using HTML, CSS and Bootstrap
 #### Backend:
@@ -131,3 +132,8 @@ df.replace({
 
 # Part 2 - Tableau Dashboard
 ![Alt text](lifespan.jpg?raw=true "Optional Title")
+
+
+![Alt text](tableau1.gif?raw=true "Optional Title")
+
+
